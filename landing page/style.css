@@ -1,0 +1,134 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.cta-btn {
+  background: white;
+  color: #333;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Features Section */
+#container-box {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+  background: #f9f9f9;
+}
+.box {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.circle {
+  width: 60px;
+  height: 60px;
+  background: #6e8efb;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+}
+.box h1 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+.box p {
+  color: #555;
+  cursor: pointer;
+}
+
+
+/* Footer */
+.footer {
+  background: #222;
+  color: #ddd;
+  text-align: center;
+  padding: 1rem;
+}
+.social-icons a {
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+  color: #ddd;
+  text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    right: 2rem;
+    top: 70px;
+    width: 200px;
+    padding: 1rem;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}

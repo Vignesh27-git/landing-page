@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">MyLogo</div>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Our Website</h1>
+      <p>We provide amazing solutions to boost your online presence.</p>
+      <a href="#" class="cta-btn">Get Started</a>
+    </div>  
+  </section>
+
+  <div>
+<!-- Features Section -->
+<section class="features">
+  <div id="container-box">
+    <div class="box">
+      <div class="circle"></div>
+      <h1>STRATEGY</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, numquam? Quam, natus quos. Dolore mollitia eveniet, natus labore, rerum magni assumenda voluptatibus, deleniti voluptas accusamus animi ea nam quis earum?</p>
+    </div>
+
+    <div class="box">
+      <div class="circle"></div>
+      <h1>CONCEPT</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque quos nihil, sint ea ducimus est omnis eius repellat, sapiente distinctio doloribus consequuntur? Illum commodi reiciendis quibusdam hic placeat exercitationem perferendis!    </p>
+    </div>
+
+    <div class="box">
+      <div class="circle"></div>
+      <h1>DEVELOPMENT</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi dolorum maxime harum, ab ducimus nulla totam maiores nesciunt beatae nihil quae necessitatibus laboriosam deleniti, at inventore ullam saepe, provident consequuntur.</p>
+    </div>
+  </div>
+</section>
+
+
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 MyCompany. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="#">🔵</a>
+      <a href="#">🐦</a>
+      <a href="#">📸</a>
+    </div>
+  </footer>
+
+  <script>
+    // Simple nav toggle for mobile
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+
+</body>
+</html>
